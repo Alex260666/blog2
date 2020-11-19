@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf_8"/>
+        <title>Contacter</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        
+        <header>
+            <div class="parent">
+                <div class="logo-img"> </div>
+                    
+                <div class="logo-text"> 
+                    <h1>Blog</h1>
+                </div>
+            </div>    
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="page2.html">Thèmes</a></li>
+                    <li><a href="page4.html">Contacter</a></li>
+                </ul>
+            </div>     
+            
+        </header>
+
+        <div class="container">
+            <section>
+
+                <p>Pour toutes <b>questions, suggestions</b> ou <b>remarques</b> n’hésitez pas à nous<br/><b>contacter</b> en remplissant le formulaire <b>ci-dessous :</b></p>
+  
+                  <form action="demo_form.html" method="get" id="nameform" autocomplete="on">
+                      <fieldset>
+                          <legend>Civilité:</legend>
+                          <input type="radio" name="civilité" value="monsieur"/>:<label>Monsieur</label>
+                          <input type="radio" name="civilité" value="madame"  />:<label>Madame</label>
+                      </fieldset>
+  
+                      <label for="nom">Votre nom :</label><br/>
+                      <input type="text" id="nom" name="nom" size="30" required /><br/>
+                      
+                      <label for="prenom">Votre prénom :</label><br/>
+                      <input type="text" id="prenom" name="prenom" size="30" required /><br/>
+                      
+                      <label for="tel">Téléphone :</label><br/>
+                      <input type="number" id="tel" name="tel" required /><br/>
+                      
+                      <label for="mail">E-mail :</label><br/>
+                      <input type="text" id="mail" name="mail" required  /><br/>
+                      
+                      <label for="message">Votre message:</label><br/>
+                      <textarea id="message" cols="50" rows="4"></textarea><br/>
+  
+                      <label for="pass">Recopiez le texte ci-dessous :</label><br/>
+                      <img src="images/97756392.png"/><br/>
+                      <input type="text" id="pass" name="pass" required /><br/>
+                 </form>
+                  <button type="submit" form="nameform" value="submit">Envoyer</button>
+            </section>
+        
+           
+        </div>
+
+        <footer>
+            <div class="mention-legale">
+                <p ><a class="mention-a" href="mention-legales.html">Mentions légales</a>
+                </p>
+                <p class="copy">Copyright &copy;2020</p>
+            </div>
+            
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
+</html>
